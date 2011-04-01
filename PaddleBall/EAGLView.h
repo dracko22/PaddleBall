@@ -15,6 +15,8 @@
 
 @class EAGLContext;
 
+class Game;
+
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
 // Note that setting the view non-opaque will only work if the EAGL surface has an alpha channel.
@@ -26,10 +28,12 @@
     
     // The OpenGL ES names for the framebuffer and renderbuffer used to render to this view.
     GLuint defaultFramebuffer, colorRenderbuffer;
+    Game* game; //Weak Pointer to game object
 }
 
 @property (nonatomic, retain) EAGLContext *context;
 
+- (void)setGame:(Game*)aGame;
 - (void)setFramebuffer;
 - (BOOL)presentFramebuffer;
 

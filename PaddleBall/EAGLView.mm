@@ -10,6 +10,8 @@
 
 #import "EAGLView.h"
 
+#include "Game.h"
+
 @interface EAGLView (PrivateMethods)
 - (void)createFramebuffer;
 - (void)deleteFramebuffer;
@@ -102,6 +104,11 @@
     }
 }
 
+- (void)setGame:(Game*)aGame
+{
+    game = aGame;
+}
+
 - (void)setFramebuffer
 {
     if (context) {
@@ -135,6 +142,27 @@
 {
     // The framebuffer will be re-created at the beginning of the next setFramebuffer method call.
     [self deleteFramebuffer];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch* touch = [touches anyObject];
+    CGPoint loc = [touch locationInView:self];
+    game->touchBegin(loc.x, loc.y);
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch* touch = [touches anyObject];
+    CGPoint loc = [touch locationInView:self];
+    game->touchMoved(loc.x, loc.y);
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch* touch = [touches anyObject];
+    CGPoint loc = [touch locationInView:self];
+    game->touchEnd(loc.x, loc.y);
 }
 
 @end

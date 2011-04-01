@@ -14,12 +14,12 @@
 		EF48A12C134590380080D2EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A12B134590380080D2EC /* OpenGLES.framework */; };
 		EF48A132134590380080D2EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF48A130134590380080D2EC /* InfoPlist.strings */; };
 		EF48A135134590380080D2EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A134134590380080D2EC /* main.m */; };
-		EF48A138134590380080D2EC /* PaddleBallAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */; };
+		EF48A138134590380080D2EC /* PaddleBallAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */; };
 		EF48A13B134590380080D2EC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A139134590380080D2EC /* MainWindow.xib */; };
 		EF48A13D134590380080D2EC /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13C134590380080D2EC /* Shader.fsh */; };
 		EF48A13F134590380080D2EC /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13E134590380080D2EC /* Shader.vsh */; };
-		EF48A142134590380080D2EC /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A141134590380080D2EC /* EAGLView.m */; };
-		EF48A145134590380080D2EC /* PaddleBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A144134590380080D2EC /* PaddleBallViewController.m */; };
+		EF48A142134590380080D2EC /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A141134590380080D2EC /* EAGLView.mm */; };
+		EF48A145134590380080D2EC /* PaddleBallViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A144134590380080D2EC /* PaddleBallViewController.mm */; };
 		EF48A148134590380080D2EC /* PaddleBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A146134590380080D2EC /* PaddleBallViewController.xib */; };
 		EF48A14F134590380080D2EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A123134590380080D2EC /* UIKit.framework */; };
 		EF48A150134590380080D2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A125134590380080D2EC /* Foundation.framework */; };
@@ -27,6 +27,9 @@
 		EF48A159134590380080D2EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF48A157134590380080D2EC /* InfoPlist.strings */; };
 		EF48A15C134590380080D2EC /* PaddleBallTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EF48A15B134590380080D2EC /* PaddleBallTests.h */; };
 		EF48A15E134590380080D2EC /* PaddleBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A15D134590380080D2EC /* PaddleBallTests.m */; };
+		EF48A16B134623A40080D2EC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A169134623A40080D2EC /* Game.cpp */; };
+		EF48A170134627530080D2EC /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A16E134627530080D2EC /* Ball.cpp */; };
+		EF48A17313462C1B0080D2EC /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A17113462C1B0080D2EC /* Vector2D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,26 +49,32 @@
 		EF48A127134590380080D2EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EF48A129134590380080D2EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EF48A12B134590380080D2EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		EF48A12F134590380080D2EC /* PaddleBall-Info.plist */ = {isa = PBXFileReference; path = "PaddleBall-Info.plist"; sourceTree = "<group>"; };
+		EF48A12F134590380080D2EC /* PaddleBall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaddleBall-Info.plist"; sourceTree = "<group>"; };
 		EF48A131134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EF48A133134590380080D2EC /* PaddleBall-Prefix.pch */ = {isa = PBXFileReference; path = "PaddleBall-Prefix.pch"; sourceTree = "<group>"; };
+		EF48A133134590380080D2EC /* PaddleBall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaddleBall-Prefix.pch"; sourceTree = "<group>"; };
 		EF48A134134590380080D2EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */ = {isa = PBXFileReference; path = PaddleBallAppDelegate.h; sourceTree = "<group>"; };
-		EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallAppDelegate.m; sourceTree = "<group>"; };
+		EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallAppDelegate.h; sourceTree = "<group>"; };
+		EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PaddleBallAppDelegate.mm; sourceTree = "<group>"; };
 		EF48A13A134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		EF48A13C134590380080D2EC /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		EF48A13E134590380080D2EC /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		EF48A140134590380080D2EC /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
-		EF48A141134590380080D2EC /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
-		EF48A143134590380080D2EC /* PaddleBallViewController.h */ = {isa = PBXFileReference; path = PaddleBallViewController.h; sourceTree = "<group>"; };
-		EF48A144134590380080D2EC /* PaddleBallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallViewController.m; sourceTree = "<group>"; };
+		EF48A140134590380080D2EC /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		EF48A141134590380080D2EC /* EAGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		EF48A143134590380080D2EC /* PaddleBallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallViewController.h; sourceTree = "<group>"; };
+		EF48A144134590380080D2EC /* PaddleBallViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PaddleBallViewController.mm; sourceTree = "<group>"; };
 		EF48A147134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PaddleBallViewController.xib; sourceTree = "<group>"; };
 		EF48A14E134590380080D2EC /* PaddleBallTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaddleBallTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF48A156134590380080D2EC /* PaddleBallTests-Info.plist */ = {isa = PBXFileReference; path = "PaddleBallTests-Info.plist"; sourceTree = "<group>"; };
+		EF48A156134590380080D2EC /* PaddleBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaddleBallTests-Info.plist"; sourceTree = "<group>"; };
 		EF48A158134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EF48A15A134590380080D2EC /* PaddleBallTests-Prefix.pch */ = {isa = PBXFileReference; path = "PaddleBallTests-Prefix.pch"; sourceTree = "<group>"; };
+		EF48A15A134590380080D2EC /* PaddleBallTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaddleBallTests-Prefix.pch"; sourceTree = "<group>"; };
 		EF48A15B134590380080D2EC /* PaddleBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallTests.h; sourceTree = "<group>"; };
 		EF48A15D134590380080D2EC /* PaddleBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallTests.m; sourceTree = "<group>"; };
+		EF48A169134623A40080D2EC /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		EF48A16A134623A40080D2EC /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EF48A16E134627530080D2EC /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		EF48A16F134627530080D2EC /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		EF48A17113462C1B0080D2EC /* Vector2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2D.cpp; sourceTree = "<group>"; };
+		EF48A17213462C1B0080D2EC /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,17 +137,8 @@
 		EF48A12D134590380080D2EC /* PaddleBall */ = {
 			isa = PBXGroup;
 			children = (
-				EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */,
-				EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */,
-				EF48A139134590380080D2EC /* MainWindow.xib */,
-				EF48A13C134590380080D2EC /* Shader.fsh */,
-				EF48A13E134590380080D2EC /* Shader.vsh */,
-				EF48A140134590380080D2EC /* EAGLView.h */,
-				EF48A141134590380080D2EC /* EAGLView.m */,
-				EF48A143134590380080D2EC /* PaddleBallViewController.h */,
-				EF48A144134590380080D2EC /* PaddleBallViewController.m */,
-				EF48A146134590380080D2EC /* PaddleBallViewController.xib */,
-				EF48A12E134590380080D2EC /* Supporting Files */,
+				EF48A167134623520080D2EC /* Game */,
+				EF48A168134623680080D2EC /* Core */,
 			);
 			path = PaddleBall;
 			sourceTree = "<group>";
@@ -172,6 +172,53 @@
 				EF48A15A134590380080D2EC /* PaddleBallTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF48A167134623520080D2EC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A16C134625A50080D2EC /* Math */,
+				EF48A16D1346273D0080D2EC /* GameObjects */,
+				EF48A16A134623A40080D2EC /* Game.h */,
+				EF48A169134623A40080D2EC /* Game.cpp */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		EF48A168134623680080D2EC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */,
+				EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */,
+				EF48A139134590380080D2EC /* MainWindow.xib */,
+				EF48A13C134590380080D2EC /* Shader.fsh */,
+				EF48A13E134590380080D2EC /* Shader.vsh */,
+				EF48A140134590380080D2EC /* EAGLView.h */,
+				EF48A141134590380080D2EC /* EAGLView.mm */,
+				EF48A143134590380080D2EC /* PaddleBallViewController.h */,
+				EF48A144134590380080D2EC /* PaddleBallViewController.mm */,
+				EF48A146134590380080D2EC /* PaddleBallViewController.xib */,
+				EF48A12E134590380080D2EC /* Supporting Files */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EF48A16C134625A50080D2EC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A17213462C1B0080D2EC /* Vector2D.h */,
+				EF48A17113462C1B0080D2EC /* Vector2D.cpp */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		EF48A16D1346273D0080D2EC /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A16F134627530080D2EC /* Ball.h */,
+				EF48A16E134627530080D2EC /* Ball.cpp */,
+			);
+			name = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF48A135134590380080D2EC /* main.m in Sources */,
-				EF48A138134590380080D2EC /* PaddleBallAppDelegate.m in Sources */,
-				EF48A142134590380080D2EC /* EAGLView.m in Sources */,
-				EF48A145134590380080D2EC /* PaddleBallViewController.m in Sources */,
+				EF48A138134590380080D2EC /* PaddleBallAppDelegate.mm in Sources */,
+				EF48A142134590380080D2EC /* EAGLView.mm in Sources */,
+				EF48A145134590380080D2EC /* PaddleBallViewController.mm in Sources */,
+				EF48A16B134623A40080D2EC /* Game.cpp in Sources */,
+				EF48A170134627530080D2EC /* Ball.cpp in Sources */,
+				EF48A17313462C1B0080D2EC /* Vector2D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

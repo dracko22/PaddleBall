@@ -15,6 +15,8 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+class Game;
+
 @interface PaddleBallViewController : UIViewController {
 @private
     EAGLContext *context;
@@ -23,6 +25,10 @@
     BOOL animating;
     NSInteger animationFrameInterval;
     CADisplayLink *displayLink;
+    
+    Game* game;
+    CGSize resolution;
+    int64_t lastTimeMS;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
