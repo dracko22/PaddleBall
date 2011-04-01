@@ -16,7 +16,7 @@ class Ball
 public:
     static const int WIDTH = 30;
     static const int HEIGHT = 30;
-    static const float INITIAL_SPEED = 100.0f; // pixels per second
+    static const int INITIAL_SPEED = 200;
     
     Ball(const int x, const int y);
     virtual ~Ball();
