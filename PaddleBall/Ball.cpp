@@ -46,7 +46,7 @@ void Ball::render()
     static const GLubyte squareColors[] = {
         192, 192, 192, 255,
         255, 0, 0, 255,
-        128, 0, 0, 0,
+        128, 0, 0, 255,
         64, 0, 0, 255,
     };
     

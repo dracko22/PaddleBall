@@ -10,6 +10,7 @@
 #define GAME_H
 
 class Ball;
+class Paddle;
 
 class Game
 {
@@ -32,6 +33,7 @@ private:
     unsigned int mHeight;
     
     Ball* mBall;
+    Paddle* mPaddle;
 };
 
 #endif //GAME_H

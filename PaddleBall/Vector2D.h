@@ -18,6 +18,9 @@ public:
     
     float getX() { return mX; }
     float getY() { return mY; }
+
+    void setX(float newX) { mX = newX; }
+    void setY(float newY) { mY = newY; }
     
     Vector2D operator=(const Vector2D &v)
 	{

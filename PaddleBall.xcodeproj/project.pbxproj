@@ -30,6 +30,7 @@
 		EF48A16B134623A40080D2EC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A169134623A40080D2EC /* Game.cpp */; };
 		EF48A170134627530080D2EC /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A16E134627530080D2EC /* Ball.cpp */; };
 		EF48A17313462C1B0080D2EC /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF48A17113462C1B0080D2EC /* Vector2D.cpp */; };
+		EF4CF0FD13466D8100BD7421 /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4CF0FB13466D8100BD7421 /* Paddle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		EF48A16F134627530080D2EC /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		EF48A17113462C1B0080D2EC /* Vector2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2D.cpp; sourceTree = "<group>"; };
 		EF48A17213462C1B0080D2EC /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		EF4CF0FB13466D8100BD7421 /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
+		EF4CF0FC13466D8100BD7421 /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,8 @@
 			children = (
 				EF48A16F134627530080D2EC /* Ball.h */,
 				EF48A16E134627530080D2EC /* Ball.cpp */,
+				EF4CF0FB13466D8100BD7421 /* Paddle.cpp */,
+				EF4CF0FC13466D8100BD7421 /* Paddle.h */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				EF48A16B134623A40080D2EC /* Game.cpp in Sources */,
 				EF48A170134627530080D2EC /* Ball.cpp in Sources */,
 				EF48A17313462C1B0080D2EC /* Vector2D.cpp in Sources */,
+				EF4CF0FD13466D8100BD7421 /* Paddle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +523,7 @@
 				EF48A163134590380080D2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF48A164134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBallTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				EF48A166134590380080D2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
