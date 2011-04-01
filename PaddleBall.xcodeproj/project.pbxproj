@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF48A124134590380080D2EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A123134590380080D2EC /* UIKit.framework */; };
+		EF48A126134590380080D2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A125134590380080D2EC /* Foundation.framework */; };
+		EF48A128134590380080D2EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A127134590380080D2EC /* CoreGraphics.framework */; };
+		EF48A12A134590380080D2EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A129134590380080D2EC /* QuartzCore.framework */; };
+		EF48A12C134590380080D2EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A12B134590380080D2EC /* OpenGLES.framework */; };
+		EF48A132134590380080D2EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF48A130134590380080D2EC /* InfoPlist.strings */; };
+		EF48A135134590380080D2EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A134134590380080D2EC /* main.m */; };
+		EF48A138134590380080D2EC /* PaddleBallAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */; };
+		EF48A13B134590380080D2EC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A139134590380080D2EC /* MainWindow.xib */; };
+		EF48A13D134590380080D2EC /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13C134590380080D2EC /* Shader.fsh */; };
+		EF48A13F134590380080D2EC /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13E134590380080D2EC /* Shader.vsh */; };
+		EF48A142134590380080D2EC /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A141134590380080D2EC /* EAGLView.m */; };
+		EF48A145134590380080D2EC /* PaddleBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A144134590380080D2EC /* PaddleBallViewController.m */; };
+		EF48A148134590380080D2EC /* PaddleBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A146134590380080D2EC /* PaddleBallViewController.xib */; };
+		EF48A14F134590380080D2EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A123134590380080D2EC /* UIKit.framework */; };
+		EF48A150134590380080D2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A125134590380080D2EC /* Foundation.framework */; };
+		EF48A151134590380080D2EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A127134590380080D2EC /* CoreGraphics.framework */; };
+		EF48A159134590380080D2EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF48A157134590380080D2EC /* InfoPlist.strings */; };
+		EF48A15C134590380080D2EC /* PaddleBallTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EF48A15B134590380080D2EC /* PaddleBallTests.h */; };
+		EF48A15E134590380080D2EC /* PaddleBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A15D134590380080D2EC /* PaddleBallTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF48A152134590380080D2EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF48A116134590370080D2EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF48A11E134590380080D2EC;
+			remoteInfo = PaddleBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF48A11F134590380080D2EC /* PaddleBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaddleBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48A123134590380080D2EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF48A125134590380080D2EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF48A127134590380080D2EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF48A129134590380080D2EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF48A12B134590380080D2EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EF48A12F134590380080D2EC /* PaddleBall-Info.plist */ = {isa = PBXFileReference; path = "PaddleBall-Info.plist"; sourceTree = "<group>"; };
+		EF48A131134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF48A133134590380080D2EC /* PaddleBall-Prefix.pch */ = {isa = PBXFileReference; path = "PaddleBall-Prefix.pch"; sourceTree = "<group>"; };
+		EF48A134134590380080D2EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */ = {isa = PBXFileReference; path = PaddleBallAppDelegate.h; sourceTree = "<group>"; };
+		EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallAppDelegate.m; sourceTree = "<group>"; };
+		EF48A13A134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		EF48A13C134590380080D2EC /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		EF48A13E134590380080D2EC /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		EF48A140134590380080D2EC /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		EF48A141134590380080D2EC /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		EF48A143134590380080D2EC /* PaddleBallViewController.h */ = {isa = PBXFileReference; path = PaddleBallViewController.h; sourceTree = "<group>"; };
+		EF48A144134590380080D2EC /* PaddleBallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallViewController.m; sourceTree = "<group>"; };
+		EF48A147134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PaddleBallViewController.xib; sourceTree = "<group>"; };
+		EF48A14E134590380080D2EC /* PaddleBallTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaddleBallTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48A156134590380080D2EC /* PaddleBallTests-Info.plist */ = {isa = PBXFileReference; path = "PaddleBallTests-Info.plist"; sourceTree = "<group>"; };
+		EF48A158134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF48A15A134590380080D2EC /* PaddleBallTests-Prefix.pch */ = {isa = PBXFileReference; path = "PaddleBallTests-Prefix.pch"; sourceTree = "<group>"; };
+		EF48A15B134590380080D2EC /* PaddleBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallTests.h; sourceTree = "<group>"; };
+		EF48A15D134590380080D2EC /* PaddleBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddleBallTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF48A11C134590380080D2EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A124134590380080D2EC /* UIKit.framework in Frameworks */,
+				EF48A126134590380080D2EC /* Foundation.framework in Frameworks */,
+				EF48A128134590380080D2EC /* CoreGraphics.framework in Frameworks */,
+				EF48A12A134590380080D2EC /* QuartzCore.framework in Frameworks */,
+				EF48A12C134590380080D2EC /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48A14A134590380080D2EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A14F134590380080D2EC /* UIKit.framework in Frameworks */,
+				EF48A150134590380080D2EC /* Foundation.framework in Frameworks */,
+				EF48A151134590380080D2EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF48A114134590370080D2EC = {
+			isa = PBXGroup;
+			children = (
+				EF48A12D134590380080D2EC /* PaddleBall */,
+				EF48A154134590380080D2EC /* PaddleBallTests */,
+				EF48A122134590380080D2EC /* Frameworks */,
+				EF48A120134590380080D2EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF48A120134590380080D2EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A11F134590380080D2EC /* PaddleBall.app */,
+				EF48A14E134590380080D2EC /* PaddleBallTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF48A122134590380080D2EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A123134590380080D2EC /* UIKit.framework */,
+				EF48A125134590380080D2EC /* Foundation.framework */,
+				EF48A127134590380080D2EC /* CoreGraphics.framework */,
+				EF48A129134590380080D2EC /* QuartzCore.framework */,
+				EF48A12B134590380080D2EC /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF48A12D134590380080D2EC /* PaddleBall */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */,
+				EF48A137134590380080D2EC /* PaddleBallAppDelegate.m */,
+				EF48A139134590380080D2EC /* MainWindow.xib */,
+				EF48A13C134590380080D2EC /* Shader.fsh */,
+				EF48A13E134590380080D2EC /* Shader.vsh */,
+				EF48A140134590380080D2EC /* EAGLView.h */,
+				EF48A141134590380080D2EC /* EAGLView.m */,
+				EF48A143134590380080D2EC /* PaddleBallViewController.h */,
+				EF48A144134590380080D2EC /* PaddleBallViewController.m */,
+				EF48A146134590380080D2EC /* PaddleBallViewController.xib */,
+				EF48A12E134590380080D2EC /* Supporting Files */,
+			);
+			path = PaddleBall;
+			sourceTree = "<group>";
+		};
+		EF48A12E134590380080D2EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A12F134590380080D2EC /* PaddleBall-Info.plist */,
+				EF48A130134590380080D2EC /* InfoPlist.strings */,
+				EF48A133134590380080D2EC /* PaddleBall-Prefix.pch */,
+				EF48A134134590380080D2EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF48A154134590380080D2EC /* PaddleBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A15B134590380080D2EC /* PaddleBallTests.h */,
+				EF48A15D134590380080D2EC /* PaddleBallTests.m */,
+				EF48A155134590380080D2EC /* Supporting Files */,
+			);
+			path = PaddleBallTests;
+			sourceTree = "<group>";
+		};
+		EF48A155134590380080D2EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A156134590380080D2EC /* PaddleBallTests-Info.plist */,
+				EF48A157134590380080D2EC /* InfoPlist.strings */,
+				EF48A15A134590380080D2EC /* PaddleBallTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF48A11E134590380080D2EC /* PaddleBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48A161134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBall" */;
+			buildPhases = (
+				EF48A11B134590380080D2EC /* Sources */,
+				EF48A11C134590380080D2EC /* Frameworks */,
+				EF48A11D134590380080D2EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaddleBall;
+			productName = PaddleBall;
+			productReference = EF48A11F134590380080D2EC /* PaddleBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF48A14D134590380080D2EC /* PaddleBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48A164134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBallTests" */;
+			buildPhases = (
+				EF48A149134590380080D2EC /* Sources */,
+				EF48A14A134590380080D2EC /* Frameworks */,
+				EF48A14B134590380080D2EC /* Resources */,
+				EF48A14C134590380080D2EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF48A153134590380080D2EC /* PBXTargetDependency */,
+			);
+			name = PaddleBallTests;
+			productName = PaddleBallTests;
+			productReference = EF48A14E134590380080D2EC /* PaddleBallTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF48A116134590370080D2EC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EF48A119134590370080D2EC /* Build configuration list for PBXProject "PaddleBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF48A114134590370080D2EC;
+			productRefGroup = EF48A120134590380080D2EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF48A11E134590380080D2EC /* PaddleBall */,
+				EF48A14D134590380080D2EC /* PaddleBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF48A11D134590380080D2EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A132134590380080D2EC /* InfoPlist.strings in Resources */,
+				EF48A13B134590380080D2EC /* MainWindow.xib in Resources */,
+				EF48A13D134590380080D2EC /* Shader.fsh in Resources */,
+				EF48A13F134590380080D2EC /* Shader.vsh in Resources */,
+				EF48A148134590380080D2EC /* PaddleBallViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48A14B134590380080D2EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A159134590380080D2EC /* InfoPlist.strings in Resources */,
+				EF48A15C134590380080D2EC /* PaddleBallTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF48A14C134590380080D2EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF48A11B134590380080D2EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A135134590380080D2EC /* main.m in Sources */,
+				EF48A138134590380080D2EC /* PaddleBallAppDelegate.m in Sources */,
+				EF48A142134590380080D2EC /* EAGLView.m in Sources */,
+				EF48A145134590380080D2EC /* PaddleBallViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48A149134590380080D2EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48A15E134590380080D2EC /* PaddleBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF48A153134590380080D2EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF48A11E134590380080D2EC /* PaddleBall */;
+			targetProxy = EF48A152134590380080D2EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF48A130134590380080D2EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48A131134590380080D2EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF48A139134590380080D2EC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48A13A134590380080D2EC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EF48A146134590380080D2EC /* PaddleBallViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48A147134590380080D2EC /* en */,
+			);
+			name = PaddleBallViewController.xib;
+			sourceTree = "<group>";
+		};
+		EF48A157134590380080D2EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF48A158134590380080D2EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF48A15F134590380080D2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF48A160134590380080D2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		EF48A162134590380080D2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaddleBall/PaddleBall-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PaddleBall/PaddleBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF48A163134590380080D2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaddleBall/PaddleBall-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PaddleBall/PaddleBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF48A165134590380080D2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaddleBall.app/PaddleBall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaddleBallTests/PaddleBallTests-Prefix.pch";
+				INFOPLIST_FILE = "PaddleBallTests/PaddleBallTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EF48A166134590380080D2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaddleBall.app/PaddleBall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaddleBallTests/PaddleBallTests-Prefix.pch";
+				INFOPLIST_FILE = "PaddleBallTests/PaddleBallTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF48A119134590370080D2EC /* Build configuration list for PBXProject "PaddleBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48A15F134590380080D2EC /* Debug */,
+				EF48A160134590380080D2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF48A161134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48A162134590380080D2EC /* Debug */,
+				EF48A163134590380080D2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF48A164134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48A165134590380080D2EC /* Debug */,
+				EF48A166134590380080D2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF48A116134590370080D2EC /* Project object */;
+}
