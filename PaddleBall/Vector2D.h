@@ -16,8 +16,10 @@ public:
     Vector2D(const Vector2D &v) : mX(v.mX), mY(v.mY) {}
     virtual ~Vector2D() {}
     
-    float getX() { return mX; }
-    float getY() { return mY; }
+    float getX() const { return mX; }
+    float getY() const { return mY; }
+    void setX(float x) { mX = x; }
+    void setY(float y) { mY = y; }
     
     Vector2D operator=(const Vector2D &v)
 	{
