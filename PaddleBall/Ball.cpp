@@ -78,6 +78,23 @@ void Ball::checkWallCollision(const float x, const float y,
         bounce(Vector2D(0.0f, 1.0f));
 }
 
+bool Ball::checkBottomWallCollision(const float x, const float y,
+						   const float w, const float h)
+{
+	return getY() <= y;
+}
+
+void Ball::checkObjectCollision(const float x, const float y,
+								const float w, const float h)
+{
+	if(abs(getY() - y) < (h/2.0f) && abs(getX() - x) < (w/2.0f))
+	{
+		bounce(Vector2D(0.0f, -1.0f));
+	}
+	
+	
+}
+
 void Ball::bounce(const Vector2D &surfaceVector)
 {
     Vector2D reflectionVector = surfaceVector * -1.0f;

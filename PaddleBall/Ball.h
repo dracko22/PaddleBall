@@ -26,6 +26,13 @@ public:
     
     virtual void checkWallCollision(const float x, const float y,
                                     const float w, const float h);
+	
+	virtual bool checkBottomWallCollision(const float x, const float y,
+								 const float w, const float h);
+	
+	virtual void checkObjectCollision(const float x, const float y,
+									  const float w, const float h);
+	
     virtual void bounce(const Vector2D &surfaceVector);
     
     virtual float getX() { return mPos.getX(); }

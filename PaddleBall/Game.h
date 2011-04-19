@@ -9,7 +9,10 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <list>
+
 class Ball;
+class Paddle;
 
 class Game
 {
@@ -19,6 +22,8 @@ public:
     
     virtual void update(unsigned int const elapsedMS);
     virtual void render();
+	
+	virtual void checkBallPaddleCollision(Ball* b);
     
     virtual void touchBegin(const int x, const int y);
     virtual void touchMoved(const int x, const int y);
@@ -31,7 +36,8 @@ private:
     unsigned int mWidth;
     unsigned int mHeight;
     
-    Ball* mBall;
+	std::list<Ball*> ballList;
+	Paddle* mPaddle;
 };
 
 #endif //GAME_H

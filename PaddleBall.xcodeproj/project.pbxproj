@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445455F3135DEA05005A1205 /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 445455F1135DEA05005A1205 /* Paddle.cpp */; };
 		EF48A124134590380080D2EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A123134590380080D2EC /* UIKit.framework */; };
 		EF48A126134590380080D2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A125134590380080D2EC /* Foundation.framework */; };
 		EF48A128134590380080D2EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48A127134590380080D2EC /* CoreGraphics.framework */; };
@@ -16,8 +17,6 @@
 		EF48A135134590380080D2EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF48A134134590380080D2EC /* main.m */; };
 		EF48A138134590380080D2EC /* PaddleBallAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */; };
 		EF48A13B134590380080D2EC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A139134590380080D2EC /* MainWindow.xib */; };
-		EF48A13D134590380080D2EC /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13C134590380080D2EC /* Shader.fsh */; };
-		EF48A13F134590380080D2EC /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EF48A13E134590380080D2EC /* Shader.vsh */; };
 		EF48A142134590380080D2EC /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A141134590380080D2EC /* EAGLView.mm */; };
 		EF48A145134590380080D2EC /* PaddleBallViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF48A144134590380080D2EC /* PaddleBallViewController.mm */; };
 		EF48A148134590380080D2EC /* PaddleBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A146134590380080D2EC /* PaddleBallViewController.xib */; };
@@ -43,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		445455F1135DEA05005A1205 /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
+		445455F2135DEA05005A1205 /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
 		EF48A11F134590380080D2EC /* PaddleBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaddleBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF48A123134590380080D2EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF48A125134590380080D2EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,8 +57,6 @@
 		EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallAppDelegate.h; sourceTree = "<group>"; };
 		EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PaddleBallAppDelegate.mm; sourceTree = "<group>"; };
 		EF48A13A134590380080D2EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		EF48A13C134590380080D2EC /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		EF48A13E134590380080D2EC /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		EF48A140134590380080D2EC /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		EF48A141134590380080D2EC /* EAGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
 		EF48A143134590380080D2EC /* PaddleBallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddleBallViewController.h; sourceTree = "<group>"; };
@@ -191,8 +190,6 @@
 				EF48A136134590380080D2EC /* PaddleBallAppDelegate.h */,
 				EF48A137134590380080D2EC /* PaddleBallAppDelegate.mm */,
 				EF48A139134590380080D2EC /* MainWindow.xib */,
-				EF48A13C134590380080D2EC /* Shader.fsh */,
-				EF48A13E134590380080D2EC /* Shader.vsh */,
 				EF48A140134590380080D2EC /* EAGLView.h */,
 				EF48A141134590380080D2EC /* EAGLView.mm */,
 				EF48A143134590380080D2EC /* PaddleBallViewController.h */,
@@ -217,6 +214,8 @@
 			children = (
 				EF48A16F134627530080D2EC /* Ball.h */,
 				EF48A16E134627530080D2EC /* Ball.cpp */,
+				445455F1135DEA05005A1205 /* Paddle.cpp */,
+				445455F2135DEA05005A1205 /* Paddle.h */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -290,8 +289,6 @@
 			files = (
 				EF48A132134590380080D2EC /* InfoPlist.strings in Resources */,
 				EF48A13B134590380080D2EC /* MainWindow.xib in Resources */,
-				EF48A13D134590380080D2EC /* Shader.fsh in Resources */,
-				EF48A13F134590380080D2EC /* Shader.vsh in Resources */,
 				EF48A148134590380080D2EC /* PaddleBallViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +332,7 @@
 				EF48A16B134623A40080D2EC /* Game.cpp in Sources */,
 				EF48A170134627530080D2EC /* Ball.cpp in Sources */,
 				EF48A17313462C1B0080D2EC /* Vector2D.cpp in Sources */,
+				445455F3135DEA05005A1205 /* Paddle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +515,7 @@
 				EF48A163134590380080D2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF48A164134590380080D2EC /* Build configuration list for PBXNativeTarget "PaddleBallTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +524,7 @@
 				EF48A166134590380080D2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

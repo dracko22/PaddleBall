@@ -46,7 +46,7 @@
     resolution.height = frame.size.height;
     
     game = new Game(resolution.width, resolution.height);
-    [self.view setGame:game];
+    [(EAGLView*)(self.view) setGame:game];
 }
 
 - (void)dealloc
